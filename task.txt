@@ -1,0 +1,40 @@
+PFA Task
+
+----------Laravel Machine Test : : User Authentication, RBAC, and Project Management -----------
+1. Setup User Authentication and Roles
+Description :
+Use Laravel Breeze to set up basic user authentication
+Create Roles and Permissions:
+-Create a roles table with id, name, created_at, and updated_at.
+-Create a permissions table with id, name, and description.
+-Create a pivot table role_permission to assign permissions to roles (many-to-many).
+-Admin should have all permissions by default, while Manager and Employee have specific permissions.
+
+2. Role-Based Access Control (RBAC) Implementation
+Description : Permissions for Projects & Access Control
+-Implement permission checks for actions like Create, Update, Delete, and View projects.
+-Admin should have full access, while Manager and Employee roles should have restricted access.
+-Ensure that Admin can manage all projects, while Managers can view/update projects they created.
+-Employees should only be able to view projects assigned to them.
+
+3.  Project CRUD with Soft Deletes
+Project CRUD Operations:
+-Perform Project Crud According to loggedin User Permission
+-Table projects : Fields Name , Description , status
+-Table project_users: project_id and user_id (Assigned Project User)
+
+4. Create a seeder that adds static user data for each role
+
+
+
+
+
+
+
+
+
+
+
+        <!-- @vite(['resources/css/app.css', 'resources/js/app.js']) -->
+         @vite(['resources/css/app.css', 'resources/js/app.js'])
+        
